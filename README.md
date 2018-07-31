@@ -1,5 +1,7 @@
 # redirect-to-www
 
+[![GoDoc](https://godoc.org/github.com/briangershon/redirect-to-www?status.svg)](https://godoc.org/github.com/briangershon/redirect-to-www)
+
 Go Middleware for redirecting a naked domain to "www" over "https".
 
 For example, a request to `mydomain.com` will redirect to "https://www.mydomain.com".
