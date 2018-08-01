@@ -1,4 +1,3 @@
-// Package redirect contains http middleware that ensures a naked domain (e.g. http://mydomain.com) is redirected to "www" subdomains aver https (i.e. https://www.mydomain.com)
 package redirect
 
 import (
@@ -7,7 +6,7 @@ import (
 	"strings"
 )
 
-// NakedDomainToWWW is http middleware that ensures a naked domain (e.g. http://mydomain.com) is redirected to "www" subdomains aver https (i.e. https://www.mydomain.com)
+// NakedDomainToWWW is http middleware that ensures a naked domain is redirected to "www" subdomain and "https".
 // "localhost" is ignored to avoid problems when testing locally.
 func NakedDomainToWWW(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
